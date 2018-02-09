@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+	"classpath:/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="com.demo.dto.RegisterDTO" table="REGISTER">
+	<id name="id" type="long" column="ID">
+		<generator class="assigned"/>
+	</id>
+	<property name="firstName" type="string" column="FIRST_NAME" not-null="true"/>
+	<property name="lastName" type="string" column="LAST_NAME" not-null="true" />
+	<property name="address" type="string" column="ADDRESS" not-null="true" />
+	<property name="email" type="string" column="EMAIL" not-null="true" />
+	<property name="password" type="string" column="PASSWORD" not-null="true" />
+	<property name="contact" type="string" column="CONTACT" not-null="true" />
+	<property name="type" type="string" column="TYPE" not-null="true" />
+</class>
+
+</hibernate-mapping>
