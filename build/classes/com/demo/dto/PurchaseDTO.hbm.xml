@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+	"classpath:/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="com.demo.dto.PurchaseDTO" table="purchase">
+	<id name="id" type="long" column="ID">
+		<generator class="assigned"/>
+	</id>
+	<property name="modelnumber" type="string" column="MODEL_NUMBER" not-null="true"/>
+	<property name="price" type="string" column="PRICE" not-null="true" />
+	<property name="quantity" type="string" column="QUANTITY" not-null="true" />
+	
+</class>
+
+</hibernate-mapping>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping SYSTEM
+	"classpath:/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+<class name="com.demo.dto.RegisterProductsDTO" table="register_products">
+	<id name="productId" type="long" column="ID">
+		<generator class="assigned"/>
+	</id>
+	<property name="modelnumber" type="string" column="MODEL_NUMBER" not-null="true"/>
+	<property name="productname" type="string" column="PRODUCT_NAME" not-null="true"/>
+	<property name="colour" type="string" column="COLOUR" not-null="true" />
+	<property name="price" type="string" column="PRICE" not-null="true" />
+	<property name="stock" type="string" column="STOCK" not-null="true" />
+	
+</class>
+
+</hibernate-mapping>
